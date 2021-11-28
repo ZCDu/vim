@@ -1,0 +1,286 @@
+{
+	"npm.binPath": "npm",
+	"coc.preferences.hoverTarget": "preview",
+	"coc.preferences.enableFloatHighlight": true,
+	"coc.preferences.snippetStatusText": "Ⓢ ",
+	"coc.preferences.extensionUpdateCheck": "weekly",
+	"suggest.detailMaxLength": 60,
+	"suggest.noselect": true,
+	"suggest.enablePreselect": false,
+	"suggest.triggerAfterInsertEnter": false,
+	"suggest.timeout": 5000,
+	"suggest.enablePreview": true,
+	"suggest.floatEnable": true,
+	"suggest.detailField": "preview",
+	"suggest.snippetIndicator": "",
+	"suggest.triggerCompletionWait": 100,
+	"suggest.echodocSupport": true,
+	"suggest.completionItemKindLabels": {
+		"class": "\uf0e8",
+		"color": "\ue22b",
+		"constant": "\uf8fe",
+		"default": "\uf29c",
+		"enum": "\uf435",
+		"enumMember": "\uf02b",
+		"event": "\ufacd",
+		"field": "\uf93d",
+		"file": "\uf723",
+		"folder": "\uf115",
+		"function": "\u0192",
+		"interface": "\uf417",
+		"keyword": "\uf1de",
+		"method": "\uf6a6",
+		"module": "\uf40d",
+		"operator": "\uf915",
+		"property": "\ue624",
+		"reference": "\ufa46",
+		"snippet": "\ue60b",
+		"struct": "\ufb44",
+		"text": "\ue612",
+		"typeParameter": "\uf728",
+		"unit": "\uf475",
+		"value": "\uf89f",
+		"variable": "\ue71b"
+	},
+	"diagnostic.signOffset": 1,
+	"diagnostic.errorSign": "×",
+	"diagnostic.warningSign": "»",
+	"diagnostic.infoSign": "ღ",
+	"diagnostic.hintSign": "ஐ",
+	"diagnostic.displayByAle": false,
+	"diagnostic.refreshOnInsertMode": false,
+	"diagnostic.refreshAfterSave": false,
+	"diagnostic.checkCurrentLine": true,
+	"diagnostic.virtualTextPrefix": " ❯❯❯ ",
+	"diagnostic.virtualText": true,
+	"codeLens.enable": true,
+	"list.previewHighlightGroup": "Statement",
+	"list.nextKeymap": "<C-e>",
+	"list.previousKeymap": "<C-u>",
+	"coc.preferences.formatOnSaveFiletypes": [
+		"javascript",
+		"html",
+		"css",
+		"python",
+		"dart"
+	],
+	"signature.target": "float",
+	"yank.enableCompletion" : false,
+	"explorer.width": 38,
+	"explorer.quitOnOpen": true,
+	"explorer.sources": [
+		{
+			"name": "buffer",
+			"expand": true
+		},
+		{
+			"name": "file",
+			"expand": true
+		}
+	],
+//	"jedi.enable": true,
+//	"jedi.startupMessage": false,
+//	"jedi.markupKindPreferred": "plaintext",
+//	"jedi.trace.server": "off",
+//	"jedi.jediSettings.autoImportModules": [],
+//	"jedi.executable.command": "jedi-language-server",
+//	"jedi.executable.args": [],
+//	"jedi.codeAction.nameExtractFunction": "jls_extract_def",
+//	"jedi.codeAction.nameExtractVariable": "jls_extract_var",
+//	"jedi.completion.disableSnippets": false,
+//	"jedi.completion.resolveEagerly": false,
+//	"jedi.diagnostics.enable": true,
+//	"jedi.diagnostics.didOpen": true,
+//	"jedi.diagnostics.didChange": true,
+//	"jedi.diagnostics.didSave": true,
+//	"jedi.workspace.extraPaths": [],
+//	"jedi.workspace.symbols.maxSymbols": 20,
+//	"jedi.workspace.symbols.ignoreFolders": [
+//		".nox",
+//		".tox",
+//		".venv",
+//		"__pycache__",
+//		"venv"
+//	],
+
+	"explorer.file.column.indent.indentLine": true,
+	"explorer.file.showHiddenFiles": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.file.column.git.showIgnored": true,
+	"explorer.keyMappingMode": "none",
+	"explorer.keyMappings": {
+		"u": "nodePrev",
+		"e": "nodeNext",
+		"h": "toggleSelection",
+		"<tab>": "actionMenu",
+		"n": "collapse",
+		"gl": "expandRecursive",
+		"gh": "collapseRecursive",
+		"i": "expand",
+		"<cr>": "open",
+		"I": "openInVsplit",
+		"o": "openInTab",
+		"N": "gotoParent",
+		"l": "gotoParent",
+		"yp": "copyFilepath",
+		"yn": "copyFilename",
+		"yy": "copyFile",
+		"dd": "cutFile",
+		"pp": "pasteFile",
+		"dD": "deleteForever",
+		"a": "addFile",
+		"k": "addFile",
+		"M": "addDirectory",
+		"cw": "rename",
+		".": "toggleHidden",
+		"zh": "toggleHidden",
+		"R": "refresh",
+		"?": "help",
+		"q": "quit",
+		"X": "systemExecute",
+		"gd": "listDrive",
+		"f": "search",
+		"F": "searchRecursive",
+		"B": "gotoSource:file",
+		"b": "gotoSource:buffer",
+		"[[": "sourcePrev",
+		"]]": "sourceNext",
+		"[d": "diagnosticPrev",
+		"]d": "diagnosticNext",
+		"[c": "gitPrev",
+		"]c": "gitNext",
+		"<<": "gitStage",
+		">>": "gitUnstage"
+	},
+	"git.enableGutters": true,
+	"git.branchCharacter":"\uf408",
+	"git.addGBlameToBufferVar": false,
+	"git.addGBlameToVirtualText": false,
+	"git.virtualTextPrefix": " ❯❯❯ ",
+	"git.addedSign.hlGroup": "GitGutterAdd",
+	"git.changedSign.hlGroup": "GitGutterChange",
+	"git.removedSign.hlGroup": "GitGutterDelete",
+	"git.topRemovedSign.hlGroup": "GitGutterDelete",
+	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+	"git.addedSign.text":"▎",
+	"git.changedSign.text":"░",
+	"git.removedSign.text":"▏",
+	"git.topRemovedSign.text": "▔",
+	"git.changeRemovedSign.text": "▒",
+	"git.enableGlobalStatus": false,
+	"git.signOffset": 2,
+//	"tslint.autoFixOnSave": true,
+	"python.autoComplete.addBrackets": true,
+	"python.jediEnabled": false,
+	"python.formatting.provider": "yapf",
+	"python.formatting.yapfArgs": [
+        "--style",
+        "{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
+    ],
+	"html.format.enable": true,
+	"javascript.referencesCodeLens.enable": true,
+	"javascript.showUnused": true,
+	"javascript.suggest.names": true,
+	"javascript.suggestionActions.enabled": true,
+	"json.format.enable": true,
+	"languageserver": {
+		"lua": {
+			"command": "lua-lsp",
+			"filetypes": ["lua"]
+		},
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": ["go.mod"],
+			"filetypes": ["go"],
+			"disableWorkspaceFolders":true
+		},
+		"bash": {
+			"command": "bash-language-server",
+			"args": ["start"],
+			"filetypes": ["sh"],
+			"ignoredRootPaths": []
+		},
+		"clangd":{
+			"command": "clangd",
+			"args": ["--background-index"],
+			"rootPatterns": ["compile_flags.txt","compile_commands.json",".git/",".hg/"],
+			"filetypes": ["c","cpp","objc","objcpp"]
+		},
+		"python":{
+			"command": "python",
+			"args": [
+				"-mpyls",
+				"-vv",
+				"--log-file",
+				"/tmp/lsp_python.log"
+			],
+			"trace.server": "verbose",
+			"filetypes": ["python"],
+			"settings": {
+				"pyls":{
+					"enable":true,
+					"trace":{
+						"server":"verbose"
+					},
+					"commandPath":"",
+					"configurationSources":[
+						"pycodestype"
+					],
+					"plugins":{
+						"jedi_completion":{
+							"enabled":true
+						},
+						"jedi_hover":{
+							"enabled":true
+						},
+						"jedi_references":{
+							"enabled":true
+						},
+						"jedi_signature_help":{
+							"enabled":true
+						},
+						"jede_symbols":{
+							"enabled":true,
+							"all_scopes":true
+						},
+						"mccabe":{
+							"enabled":true,
+							"threshold":15
+						},
+						"preload":{
+							"enabled":true
+						},
+						"pycodestype":{
+							"enabled":true
+						},
+						"pydocstyle":{
+							"enabled":false,
+							"match":"(?!test_).*\\.py",
+							"matchDir":"[^\\.].*"
+						},
+						"pyflakes":{
+							"enabled":true
+						},
+						"rope_completion":{
+							"enabled":true
+						},
+						"yapf":{
+							"enabled":true
+						}
+					}
+				}
+			}
+		}
+//		"ccls": {
+//			"command": "ccls",
+//			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+//			"rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+//			"initializationOptions": {
+//				 "cache": {
+//					 "directory": "/tmp/ccls"
+//				 }
+//			 }
+//		}
+	}
+}
+
