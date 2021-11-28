@@ -39,7 +39,7 @@ source ~/.config/nvim/_machine_specific.vim
 " ===
 " === System
 " ===
-"set clipboard=unnamedplus
+set clipboard=unnamedplus
 let &t_ut=''
 set autochdir
 
