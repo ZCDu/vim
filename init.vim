@@ -194,6 +194,7 @@ noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
 " Copy to system clipboard
 vnoremap Y "+y
+vnoremap P "+p
 
 " Indentation
 nnoremap < <<
@@ -250,18 +251,12 @@ noremap sv <C-w>t<C-w>H
 noremap srh <C-w>b<C-w>K
 noremap srv <C-w>b<C-w>H
 
-" Press <SPACE> + q to close the window below the current window
-noremap <LEADER>q <C-w>j:q<CR>
-
 
 " ===
 " === Other useful stuff
 " ===
 " Open a new instance of st with the cwd
 nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
-
-" Move the next character to the end of the line with ctrl+9
-inoremap <C-u> <ESC>lx$p
 
 " Opening a terminal window
 noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
@@ -709,7 +704,7 @@ set rtp+=/home/zcdu/.fzf/
 noremap <C-p> :FZF<CR>
 noremap <C-f> :Ag<CR>
 noremap J :MRU<CR>
-noremap T :BTags<CR>
+noremap <C-t> :BTags<CR>
 noremap L :LinesWithPreview<CR>
 noremap B :Buffers<CR>
 noremap H :History:<CR>
@@ -881,7 +876,7 @@ noremap <LEADER>gi :FzfGitignore<CR>
 " === Ultisnips
 " ===
 let g:tex_flavor = "latex"
-inoremap <c-n> <nop>
+inoremap <c-e> <nop>
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-n>"
