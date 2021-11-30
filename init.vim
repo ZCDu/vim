@@ -203,8 +203,6 @@ nnoremap > >>
 "noremap <LEADER>dw /\(\<\w\+\>\)\_s*\1
 
 
-" Folding
-noremap <silent> <LEADER>o za
 
 " Open up lazygit
 noremap \g :term lazygit<CR>
@@ -285,7 +283,7 @@ noremap <LEADER>= :lne<CR>
 noremap \s :%s//g<left><left>
 
 " Compile function
-noremap \r :call CompileRunGcc()<CR>
+noremap R :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
@@ -408,8 +406,12 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 "Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
 "Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
 "Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
-Plug 'tweekmonster/braceless.vim'
+Plug 'tweekmonster/braceless.vim', {'for':['python']}
 
+
+" markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+"vim-table-mode
 
 
 
@@ -700,6 +702,7 @@ nnoremap <silent> \p  :<C-u>CocListResume<CR>
 "set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 map J <Nop>
 map B <Nop>
+map H <Nop>
 map L <Nop>
 map T <Nop>
 set rtp+=/home/zcdu/.fzf/
@@ -709,7 +712,7 @@ noremap J :MRU<CR>
 noremap T :BTags<CR>
 noremap L :LinesWithPreview<CR>
 noremap B :Buffers<CR>
-"noremap ; :History:<CR>
+noremap H :History:<CR>
 
 autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noruler
@@ -1161,6 +1164,32 @@ let g:dashboard_custom_shortcut={
   \ 'book_marks'         : 'SPC f b',
   \ }
 
+"===
+"=== markdown preview
+"===
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_open_ip = ''
+let g:mkdp_browser = 'google-chrome'
+let g:mkdp_echo_preview_url = 0
+let g:mkdp_browserfunc = ''
+let g:mkdp_preview_options = {
+		\ 'mkit': {},
+		\ 'katex': {},
+		\ 'uml': {},
+		\ 'maid': {},
+		\ 'disable_sync_scroll': 0,
+		\ 'sync_scroll_type': 'middle',
+		\ 'hide_yaml_meta': 1
+		\ }
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+let g:mkdp_port = ''
+let g:mkdp_page_title = '「${name}」'
+let g:mkdp_filetypes = ['markdown']
 
 " ===================== End of Plugin Settings =====================
 
