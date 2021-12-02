@@ -30,8 +30,8 @@ noremap : 设置正常模式下的键位map
 - P : 粘贴系统剪贴板的内容
 
 ## terminal
-- \\t : 打开一个新的st终端，在同一个文件夹下
-- \<Leader\> : 打开一个vim内置的terminal
+- \<Leader\>t : 打开一个新的st终端，在同一个文件夹下
+- \<Leader\>\\ : 打开一个vim内置的terminal
 
 ## git
 - \\g ： 启动lazgyit

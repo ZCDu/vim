@@ -256,7 +256,7 @@ noremap srv <C-w>b<C-w>H
 " === Other useful stuff
 " ===
 " Open a new instance of st with the cwd
-nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
+nnoremap <LEADER>t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
 
 " Opening a terminal window
 noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
