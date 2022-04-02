@@ -230,8 +230,8 @@ noremap s <nop>
 " split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
 noremap su :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
 noremap se :set splitbelow<CR>:split<CR>
-noremap sn :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
-noremap si :set splitright<CR>:vsplit<CR>
+noremap si :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+noremap sn :set splitright<CR>:vsplit<CR>
 
 " Resize splits with arrow keys
 noremap <C-up> <nop>
@@ -278,6 +278,7 @@ noremap <LEADER>= :lne<CR>
 noremap \s :%s//g<left><left>
 
 " Compile function
+noremap R <nop>
 noremap R :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
@@ -354,7 +355,9 @@ Plug 'junegunn/fzf.vim'
 "Plug 'yuki-ycino/fzf-preview.vim'
 "Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 "Plug 'junegunn/fzf'
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+"Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Taglist
 Plug 'liuchengxu/vista.vim'
@@ -599,7 +602,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gl <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 "nerdtree substitute
 "nmap <silent>N :CocCommand explorer<CR>
@@ -876,11 +879,10 @@ noremap <LEADER>gi :FzfGitignore<CR>
 " === Ultisnips
 " ===
 let g:tex_flavor = "latex"
-inoremap <c-e> <nop>
-let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-e>"
-let g:UltiSnipsJumpBackwardTrigger="<c-n>"
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/Ultisnips/', 'UltiSnips']
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/plugged/ultisnips/', 'UltiSnips']
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap <c-r>
 
 
@@ -1067,15 +1069,19 @@ cnoreabbrev sw w suda://%
 " ===
 " === rnvimr
 " ===
-let g:rnvimr_ex_enable = 1
-let g:rnvimr_pick_enable = 1
-"nnoremap <silent> <LEADER>n :RnvimrSync<CR>:RnvimrToggle<CR><C-\><C-n>:RnvimrResize 0<CR>
-map <M-n> <Nop>
-tnoremap <silent> <M-i> <C-\><C-n>:RnvimrResize<CR>
-nnoremap <silent> <LEADER>n :RnvimrToggle<CR>
-tnoremap <silent> <M-n> <C-\><C-n>:RnvimrToggle<CR>
-let g:rnvimr_presets = [{'width': 1.0, 'height': 1.0}]
+"let g:rnvimr_ex_enable = 1
+"let g:rnvimr_pick_enable = 1
+""nnoremap <silent> <LEADER>n :RnvimrSync<CR>:RnvimrToggle<CR><C-\><C-n>:RnvimrResize 0<CR>
+"map <M-n> <Nop>
+"tnoremap <silent> <M-i> <C-\><C-n>:RnvimrResize<CR>
+"nnoremap <silent> <LEADER>n :RnvimrToggle<CR>
+"tnoremap <silent> <M-n> <C-\><C-n>:RnvimrToggle<CR>
+"let g:rnvimr_presets = [{'width': 1.0, 'height': 1.0}]
 
+" ===
+" === telescope
+" ===
+nnoremap <leader>n <cmd>Telescope find_files<cr>
 
 " ===
 " === neoranger
