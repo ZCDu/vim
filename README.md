@@ -1,4 +1,5 @@
 # Vim Guidance
+> This repository is vim configuration file, although it can be used for neovim.
 # Before Installation
 - nodejs (needed by coc.nvim)
 - lazygit (needed by \\g)
