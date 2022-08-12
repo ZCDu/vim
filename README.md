@@ -5,6 +5,10 @@
 - fzf (needed by fzf.vim) 在init.vim配置部分需要指定系统fzf安装的路径, 确定路径是一致的
 - ranger *(needed by rnvimr)
 
+# Installation
+Clone this repository to $HOME as .vim, and create a soft link of init.vim to $HOME/.vimrc(ln -s .vim/init.vim $HOME/.vimrc). Then, open vimrc to auto install plugins.
+If not work, run PlugInstall to manual setup(PlugInstall is a function from vim-plug).
+
 # vim-plug
 ## Plug options
 |Option|Description|补充说明|例子|
