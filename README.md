@@ -2,7 +2,7 @@
 # Before Installation
 - nodejs (needed by coc.nvim)
 - lazygit (needed by \\g)
-- fzf (needed by fzf.vim)
+- fzf (needed by fzf.vim) 在init.vim配置部分需要指定系统fzf安装的路径, 确定路径是一致的
 - ranger *(needed by rnvimr)
 
 # vim-plug
