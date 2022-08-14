@@ -327,8 +327,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'RRethy/vim-illuminate'
 
 "a start screen shortcut
-"Plug 'mhinz/vim-startify'
-Plug 'glepnir/dashboard-nvim'
+Plug 'mhinz/vim-startify'
+" Plug 'glepnir/dashboard-nvim', {'branch': 'async-render'} "作者太骚了哦，新的版本一定要字节配置哦
 
 
 " Pretty Dress
