@@ -1,5 +1,6 @@
 # Vim Guidance
 > This repository is vim configuration file, although it can be used for neovim.
+本仓库已不再使用，作者转去使用lua配置了，具体可以转去[luavim](https://github.com/ZCDu/luavim)
 # Before Installation
 - nodejs (needed by coc.nvim)
 - lazygit (needed by \\g)
